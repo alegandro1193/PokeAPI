@@ -184,7 +184,39 @@ header h1{
 
 @media (max-width: 667px) {
 	body{
-		background-color: aquamarine;
+		
+	}
+
+	.menu{
+		margin-top: 50px;
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		font-family: pixel;
+	}
+	.menu label{
+		margin-top: 10px;
+		font-size: 15px;
+	}
+	.menu button{
+		font-family: pixel;
+		width: 90px;
+	}
+	.menu input{
+		font-family: pixel;
+		padding: 5px;
+		height: 15px;
+		width: 90px;
+	}
+
+	#informacion{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 50px;
+		font-family: pixel;
+		
+	
 	}
 
 }
