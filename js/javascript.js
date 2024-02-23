@@ -2,6 +2,7 @@ let boton=document.getElementById('boton')
 //var informacion=document.getElementById('informacion')
 function MostrarMacho(){
     let nombre = document.getElementById('pokemonNombre').value
+   
     var pokeapi = `https://pokeapi.co/api/v2/pokemon/`;
     pokeapi = pokeapi + nombre
     fetch (pokeapi)
@@ -83,7 +84,8 @@ function MostrarMacho(){
 
 
 function ConsultarApi(){
-    let nombre = document.getElementById('pokemonNombre').value
+    let nombre = document.getElementById('pokemonNombre').value.toLowerCase()
+    
     var pokeapi = `https://pokeapi.co/api/v2/pokemon/`;
     pokeapi = pokeapi + nombre
     fetch (pokeapi)
@@ -94,7 +96,7 @@ function ConsultarApi(){
     .then( 
         data =>{ 
 
-         console.log(data);
+            console.log(nombre)
          var imagen = data.sprites.front_default
          var imagen_shiny = data.sprites.front_shiny
          var name= data.name
