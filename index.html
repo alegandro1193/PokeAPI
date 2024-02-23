@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HanheldFriendly" content="true" />
+
+    <!-- Meta etiquetas PWA para Apple -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="assets/favicons/favicon_128x128@1x.png"
+    />
+
+    <!-- Configuración General PWA -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/favicons/favicon_16x16@1x.png" />
+    <link rel="apple-touch-icon" href="assets/favicons/favicon_32x32@1x.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="48x48"
+      href="assets/favicons/favicon_24x24@1x.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="96x96"
+      href="assets/favicons/favicon_32x32@1x.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/favicons/favicon_64x64@1x.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="assets/favicons/favicon_128x128@1x.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/favicon_256x256@1x.png"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="assets/favicons/favicon_512x512@1x.png"
+    />
+   
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+   <header>
+    <h1> 
+        Pokedex
+    </h1> 
+</header>
+   <main>
+        <div class="menu" > 
+             <label>  Nombre del Pokemon</label>
+        <input id="pokemonNombre" type="text" id="name" >
+        <button id="boton" onclick="ConsultarApi()">Enter</button> </div>
+       
+   
+        <div id="informacion">
+            
+        </div>
+
+    </main>
+   <footer></footer>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
